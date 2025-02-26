@@ -21,6 +21,4 @@ else {
 //Displaying the validation messages
 if (errormessage) {
     let errorElement = document.createElement(span);
-    errorElement.textContent = errormessage
-    inputElement.appendChild(errorElement);
 }

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",function(){
 //Form submission Event Listner
 form.addEventListener("submit",function(event) {
     event.preventDefault();
-    console.log("Form submission.");
+    console.warn("Form submission.");
     });
 });
 
@@ -12,13 +12,14 @@ form.addEventListener("submit",function(event) {
 const numTicketsInput = document.getElementById("numTickets");
 const isValid = ValidateNumberInput(numTicketsInput, 1 , 5 , 15);
 if (isValid) {
-    console.log("Valid input of the ticket number.");
+    console.warn("Valid input of the ticket number.");
 } 
 else {
-    console.log("Invalid input of the ticket number.");
+    console.warn("Invalid input of the ticket number.");
 }
 
 //Displaying the validation messages
 if (errormessage) {
     let errorElement = document.createElement(span);
+    errorElement = errormessage;
 }

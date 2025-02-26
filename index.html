@@ -21,14 +21,25 @@
 			<input type="Email" id="Email" Email="Email" placeholder="Email" required />
 			<fieldset>
 				<legend>Choice of Events</legend>
-				<input type="Event" id="Event1" name="Event 1" value="Sports" />
+				<input type="Checkbox" id="Event1" name="Event 1" value="Sports" />
 				<label for="Event1">Sports</label>
-				<input type="Event" id="Event2" name="Event2" value="Books" />
-				<label for="Event2">Books</label>
-				<input type="Event" id="Event3" name="Event3" value="Movies" />
-				<label for="Event3">Movies</label>
+				<input type="Checkbox" id="Event2" name="Event2" value="Art" />
+				<label for="Event2">Art</label>
+				<input type="Checkbox" id="Event3" name="Event3" value="Theatre" />
+				<label for="Event3">Theatre</label>
 			</fieldset>
-			<button type="submit">Register</button>
+			<button type="submit" >Register</button>
+			<button onclick="register()">Register</button>
+			<script>
+				function register() {
+					location.href ="Successful";
+				}
+			</script>
+			<form>
+			<form id="Validation check">
+				<input type="text" id="name" placeholder="Name">
+				<span id="Error"></span><br>
+			</form>
 		</form>
 		<script src="script.js"></script>
 	</body>
